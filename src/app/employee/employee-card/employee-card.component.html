@@ -1,0 +1,10 @@
+<div class="employee-card">
+  <p><strong>Name:</strong> {{ employee?.name }}</p>
+  <p><strong>Email:</strong> {{ employee?.email }}</p>
+  <p><strong>Phone:</strong> {{ employee?.phone }}</p>
+  <p><strong>Hire Date:</strong> {{ employee?.hireDate }}</p>
+  <div class="card-buttons">
+    <button class="edit-button" (click)="onEdit()">Edit</button>
+    <button class="delete-button" (click)="onDelete()">Delete</button>
+  </div>
+</div>

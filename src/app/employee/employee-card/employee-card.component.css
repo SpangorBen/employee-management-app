@@ -1,0 +1,76 @@
+.employee-card {
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 0px;
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #87cefa;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.employee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.employee-card p {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #333; /* Dark gray for text */
+}
+
+.employee-card p:first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #4682b4; /* Steel Blue */
+}
+
+.employee-card p:last-child {
+  color: #556b2f; /* Dark Olive Green */
+  font-style: italic;
+}
+
+.employee-card p strong {
+  font-weight: 600;
+  color: #2e8b57; /* Sea Green */
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.card-buttons button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.card-buttons .edit-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.card-buttons .edit-button:hover {
+  background-color: #45a049;
+}
+
+.card-buttons .delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.card-buttons .delete-button:hover {
+  background-color: #da190b;
+}

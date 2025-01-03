@@ -1,0 +1,15 @@
+<div class="employee-list-container">
+  <div class="employee-list-header">
+    <h2>Employee Directory</h2>
+    <button (click)="onAdd()">Add New Employee</button>
+  </div>
+  <div class="employee-list">
+    <div *ngFor="let employee of (employees$ | async)" class="employee-list-item">
+      <app-employee-card
+        [employee]="employee"
+        (edit)="onEdit(employee.id)"
+        (delete)="onDelete(employee.id)"
+      ></app-employee-card>
+    </div>
+  </div>
+</div>
